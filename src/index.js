@@ -120,10 +120,10 @@ export default class MaterialDropZone extends React.Component {
 
                 if (isImage(file)) {
                     //show image preview.
-                    img = <img className="smallPreviewImg" src={path}/>;
+                    img = (<img className="smallPreviewImg" src={path}/>)
                 } else {
                     //Show default file image in preview.
-                    img = <FileIcon className="smallPreviewImg"/>;
+                    img = (<FileIcon className="smallPreviewImg"/>)
                 }
 
                 return (<div>
