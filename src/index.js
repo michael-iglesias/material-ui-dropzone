@@ -21,7 +21,7 @@ export default class MaterialDropZone extends React.Component {
             files: this.props.files || [],
             disabled: true,
             acceptedFiles: this.props.acceptedFiles ||
-            ['image/jpeg', 'image/png', 'image/bmp', 'application/vnd.ms-excel',
+            ['image/jpeg', 'image/png', 'image/bmp', 'audio/mp4', 'audio/m4a', 'application/vnd.ms-excel',
                 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
                 'application/vnd.ms-powerpoint',
                 'application/vnd.openxmlformats-officedocument.presentationml.presentation',
