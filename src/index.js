@@ -103,7 +103,7 @@ export default class MaterialDropZone extends React.Component {
         });
     }
 
-    handleRequestCloseSnackBar = () => {
+    handleRequestCloseSnackBar() {
         this.setState({
             openSnackBar: false,
         });
