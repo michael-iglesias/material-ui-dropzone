@@ -245,7 +245,7 @@ var MaterialDropZone = function (_React$Component) {
                     _react2.default.createElement(
                         _reactDropzone2.default,
                         {
-                            accept: this.state.acceptedFiles.join(','),
+                            accept: this.props.acceptedFiles.join(','),
                             onDrop: this.onDrop.bind(this),
                             className: 'dropZone',
                             acceptClassName: 'stripes',

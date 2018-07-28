@@ -166,7 +166,7 @@ export default class MaterialDropZone extends React.Component {
                     autoScrollBodyContent={true}
                 >
                     <Dropzone
-                        accept={this.state.acceptedFiles.join(',')}
+                        accept={this.props.acceptedFiles.join(',')}
                         onDrop={this.onDrop.bind(this)}
                         className={'dropZone'}
                         acceptClassName={'stripes'}
