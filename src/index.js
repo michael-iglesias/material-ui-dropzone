@@ -133,7 +133,7 @@ export default class MaterialDropZone extends React.Component {
                             <IconButton touch={true}>
                                 <ActionDelete
                                     className="removeBtn"
-                                    onTouchTap={this.handleRemove.bind(this, file, i)}
+                                    onClick={this.handleRemove.bind(this, file, i)}
                                 />
                             </IconButton>
                         </div>
@@ -146,13 +146,13 @@ export default class MaterialDropZone extends React.Component {
             <FlatButton
                 label={'Cancel'}
                 primary={true}
-                onTouchTap={this.handleClose.bind(this)}
+                onClick={this.handleClose.bind(this)}
             />,
             <FlatButton
                 label={'Submit'}
                 primary={true}
                 disabled={this.state.disabled}
-                onTouchTap={this.saveFiles.bind(this)}
+                onClick={this.saveFiles.bind(this)}
             />];
 
         return (

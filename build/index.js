@@ -209,7 +209,7 @@ var MaterialDropZone = function (_React$Component) {
                                     { touch: true },
                                     _react2.default.createElement(_clear2.default, {
                                         className: 'removeBtn',
-                                        onTouchTap: _this2.handleRemove.bind(_this2, file, i)
+                                        onClick: _this2.handleRemove.bind(_this2, file, i)
                                     })
                                 )
                             )
@@ -221,12 +221,12 @@ var MaterialDropZone = function (_React$Component) {
             var actions = [_react2.default.createElement(_FlatButton2.default, {
                 label: 'Cancel',
                 primary: true,
-                onTouchTap: this.handleClose.bind(this)
+                onClick: this.handleClose.bind(this)
             }), _react2.default.createElement(_FlatButton2.default, {
                 label: 'Submit',
                 primary: true,
                 disabled: this.state.disabled,
-                onTouchTap: this.saveFiles.bind(this)
+                onClick: this.saveFiles.bind(this)
             })];
 
             return _react2.default.createElement(
